@@ -4,8 +4,9 @@
 A Julia package for solving partial differential equations on domains bounded by planar algebraic curves.
 
 This experimental package implements generalised Koornwinder polynomials on the `GeneralisedKoornwinderDomain` `{(x, y)∈ ℝ² | γ*ρ(x) ≤ y ≤ δ*ρ(x), α ≤ x ≤ β}`
-with respect to the weight `(β-x)ᵃ (x-α)ᵇ (y-γ*ρ(x))ᶜ (δ*ρ(x)-y)ᵈ`. Here `ρ(x)` is either a polynomial (`ϵ == 0`) or the square root of a polynomial (`ϵ == 1`), with `θ = deg(ρ(x)²)` in both cases.
+with respect to the weight `(β-x)ᵃ (x-α)ᵇ (y-γ*ρ(x))ᶜ (δ*ρ(x)-y)ᵈ`. Here `ρ(x)` is either a polynomial (`if ϵ == 0`) or the square root of a polynomial (`if ϵ == 1`), with `θ = deg(ρ(x)²)` in both cases.
 
+> ⚠️**TODO**: Implement lazy storage and manipulation of infinite-dimensional matrices/vectors.
 
 # Example Usage
 
